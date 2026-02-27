@@ -1,0 +1,116 @@
+/* =========================
+   IMPORTAÇÃO DE FONTES
+   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* =========================
+   ESTILO GLOBAL
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+/* Fundo preto e texto branco */
+body {
+    background-color: black !important;
+    color: rgb(0, 36, 3) !important;
+}
+
+/* Fonte de títulos */
+.title-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* =========================
+   HERO COM IMAGEM + OVERLAY ESCURO
+   ========================= */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("imagens/fundo barbearia.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* =========================
+   EFEITOS E HOVER
+   ========================= */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.barber-img {
+    transition: all 0.3s ease;
+}
+
+.barber-img:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   MENU DE NAVEGAÇÃO
+   ========================= */
+.nav-link {
+    position: relative;
+    color: rgb(9, 73, 3); 
+    text-decoration: none;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7c7e92;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.active:after {
+    width: 100%;
+}
+
+/* =========================
+   BOTÃO DE RESERVA
+   ========================= */
+.booking-btn {
+    background: linear-gradient(45deg, #ff0000, #000000);
+    color: white;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.booking-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* =========================
+   ICONES DE REDES SOCIAIS
+   ========================= */
+.social-icon {
+    transition: all 0.3s ease;
+    color: rgb(4, 77, 2); 
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
